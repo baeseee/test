@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="euc-8">
+	<meta charset="euc-kr">
 	<title>Document</title>
 	<script src="jquery.js"></script>
 	
@@ -26,6 +26,12 @@
 				alert('숫자만 입력가능');
 			}
 		});
+
+		$('#ul li').click( function(e){
+			$('#ul li').css({"margin-left":"0px"});
+			$(this).css({"margin-left":"200px"});
+			$(this).css({"background-color":"#ffff90"});
+		});
 	});
 	
 </script>
@@ -33,9 +39,9 @@
 
 </head>
 <body>
-	<ul>
+	<ul id="ul">
 		<li id="aaa"><a href="#">백두산 계산기</a></li>
-		<li>css</li>
+		<li class="css">css</li>
 		<li id="select">javascript</li>
 	</ul>
 
